@@ -1,4 +1,5 @@
-#write a function which takes an array of integers and find the two items which sum to a given total and returns their product
+#write a function which takes an array of integers and 
+# find the two items which sum to a given total and returns their product
 
 # ([1, 2, 4, 8], 10) 2 * 8 = 16
 # ([1721, 979, 366, 299, 675, 1456], 2020)  1721 * 299 = 514579
@@ -70,6 +71,8 @@ def get_product_of_two_numbers(numbers, target_value):
     return None
 
 
+
+# ([1, 2, 4, 8], 10) 2 * 8 = 16
 # hash set approach
 def get_product_of_two_numbers(numbers, target_value):
     # Create an empty set to store the numbers we have seen so far
@@ -172,5 +175,65 @@ print(is_monotonic([1, 3, 2]))  # Output: False (not monotonic)
 
 
 
+# Problem: Given an array of integers nums and an integer target, 
+# return the indices of the two numbers that add up to the target.
 
+# Input: nums = [2, 7, 11, 15], target = 9
+# Output: [0, 1]  
+# # Because nums[0] + nums[1] = 2 + 7 = 9
+
+def two_sum(nums, target):
+    num_map = {} #store the numbers and their index
+    #e.g [2, 7, 11, 15]
+       #  0, 1, 2, 3
+
+    for i, num in enumerate(nums):
+        #eg 0 2, 
+         # 1 7, 
+         # 2 11, 
+         # 3 15
+
+        complement = target - num
+        #eg 9 - 2 = 7
+
+        if complement in num_map:
+            #eg if 7 in Input: nums = [2, 7, 11, 15]
+
+            return [num_map[complement], i]
+            #If the complement is found, 
+            #return the KEY which is the index of the complement
+            #i.e return the index of 7 which is 1 and current index 0
+            # it returns the indices of the two numbers that add up to the target.
+        
+        num_map[num] = i
+        #If the complement is not found in num_map, this line adds the current
+        #number num and its index i to the num_map dictionary. This way, if we
+        #encounter the complement of this number later in the list, we can quickly look it up.
+        
+        return []
+        #If the loop finishes without finding a pair of numbers that add up to the target, 
+        # this line returns an empty list [], indicating that no solution was found.
+
+
+
+
+
+
+# Problem: Given a string s containing just the characters (, ), {, }, [, and ], 
+# determine if the input string is valid.
+
+# Input: s = "()[]{}"
+# Output: True
+
+def is_valid(s):
+    stack = []
+    mapping = {")": "(",  "}":"{", "]":"["}
+    for char in s:
+        if char in mapping:
+            top_element = stack.pop() if stack else '#'
+            if mapping[char] != top_element:
+                return False
+        else:
+            stack.append(char)
+    return not stack
 

@@ -1,15 +1,16 @@
 arr = [-4, -2, 1, 3, 5]
-for i in range(len(arr)-1, -1, -1):
+# for i in range(len(arr)-1, -1, -1):
+#     print(i)
+#     print(arr)
+# #If you want the loop to include the first index (0),
+
+
+
+
+
+for i in range(len(arr)-1, 0, -1):
     print(i)
     print(arr)
-#If you want the loop to include the first index (0),
-
-
-
-
-
-# for i in range(len(arr)-1, 0, -1):
-#     print(i)
 #If you want the loop to exclude the first index (0),
     # Start from the index len(arr)-1 (last element).
     # Stop at 0 (exclusive—does not include 0).
