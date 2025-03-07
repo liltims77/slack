@@ -237,3 +237,26 @@ def is_valid(s):
             stack.append(char)
     return not stack
 
+
+
+##SELECTION SORT USING PYTHON
+# This code is an example of the selection sort algorithm, which is used to sort a list of numbers in order (from smallest to largest).
+def selection_sort(arr):
+    # Loop over each position i in the array
+    for i in range(len(arr)):
+        # Assume the element at position i is the smallest (best)
+        min_idx = i
+        
+        # Check the rest of the array (from i+1 to end)
+        for j in range(i + 1, len(arr)):
+            if arr[j] < arr[min_idx]:
+                # Found a new best candidate, update min_idx
+                min_idx = j
+        
+        # Swap the best candidate found with the element at position i
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+arr = [64, 25, 12, 22, 11]
+prinr("original array:", arr)
+selection_sort(arr)
+prinr("sorted array:", arr)

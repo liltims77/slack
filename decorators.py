@@ -11,7 +11,7 @@ that wraps around the original function to add extra functionality"""
 
 def my_decorator(func):
     def wrapper(*args, **kwargs):
-        print("befire calling the function")
+        print("before calling the function")
         result = func(*args, **kwargs)
         print("After calling the function")
         return result
@@ -38,7 +38,7 @@ say_hello("Alice")
 # Returns the result of the original function call.
 # Applying the Decorator:
 # The line @my_decorator above say_hello is shorthand for:
-say_hello = my_decorator(say_hello)
+# say_hello = my_decorator(say_hello)
 # when you call say_hello("Alice"), it actually calls the wrapper function.
 
 
@@ -71,20 +71,20 @@ say_hello = my_decorator(say_hello)
 # This requires an extra layer of function definitions, 
 # effectively turning the decorator into a decorator factory.
 
-def repeat(num_times):
-    def decorator_repeat(func):
-        def wrapper(*args, **kwargs):
-            for _ in range(num_times):
-                result = func(*args, **kwargs)
-            return result
-        return wrapper
-    return decorator_repeat
+# def repeat(num_times):
+#     def decorator_repeat(func):
+#         def wrapper(*args, **kwargs):
+#             for _ in range(num_times):
+#                 result = func(*args, **kwargs)
+#             return result
+#         return wrapper
+#     return decorator_repeat
 
-@repeat(3)
-def greet(name):
-    print(f"Hello, {name}!")
+# @repeat(3)
+# def greet(name):
+#     print(f"Hello, {name}!")
 
-greet("Bob")
+# greet("Bob")
 
 
 # In this example:
