@@ -1,3 +1,0 @@
-from pyspark_datasources import FakeDataSource
-
-spark.dataSource.register(FakeDataSource)
