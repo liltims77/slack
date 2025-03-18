@@ -254,9 +254,9 @@ def selection_sort(arr):
                 min_idx = j
         
         # Swap the best candidate found with the element at position i
-        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]  # Swap the found min with the first unsorted element
 
 arr = [64, 25, 12, 22, 11]
-prinr("original array:", arr)
+print("original array:", arr)
 selection_sort(arr)
-prinr("sorted array:", arr)
+print("sorted array:", arr)
