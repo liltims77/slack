@@ -74,3 +74,38 @@
 ########################
 SOLUTION
 
+class Person:
+    def __init__(self, initialAge):
+        # Check if initialAge is valid
+        if initialAge < 0:
+            print("Age is not valid, setting age to 0.")
+            self.age = 0
+        else:
+            self.age = initialAge
+
+    def amIOld(self):
+        # Determine if the person is young, a teenager, or old
+        if self.age < 13:
+            print("You are young.")
+        elif 13 <= self.age < 18:
+            print("You are a teenager.")
+        else:
+            print("You are old.")
+
+    def yearPasses(self):
+        # Increment age
+        self.age += 1
+
+
+# Read input and process multiple test cases
+t = int(input())  # Number of test cases
+for _ in range(t):
+    age = int(input())  # Input age
+    p = Person(age)  # Create Person instance
+    p.amIOld()  # Check initial age
+    for _ in range(3):  # Simulate three years passing
+        p.yearPasses()
+    p.amIOld()  # Check age after three years
+    print("")  # Print an empty line as per expected output
+
+
