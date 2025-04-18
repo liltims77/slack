@@ -1,3 +1,30 @@
+# QUESTION
+# 1. how does index improves query performance
+Indexes improve query performance by reducing the number of rows the database needs to scan. They create a sorted structure (e.g., B-Trees or Hash Indexes) that allows the database to quickly locate data instead of scanning the entire table. This speeds up SELECT, WHERE, JOIN, and ORDER BY operations.
+
+# QUESTION
+# 2. how does cloud computing affect data engineering
+Cloud computing enhances data engineering by providing scalable storage, on-demand computing power, and managed services for data processing (e.g., AWS S3, GCP BigQuery, Azure Data Factory). It enables distributed computing, real-time data streaming, cost efficiency, and easier integration of AI/ML workloads.
+
+# QUESTION
+# 3. how does apache spark improve big data processing
+Apache Spark improves big data processing by using in-memory computation, distributed processing, and optimized DAG execution. It supports batch and real-time processing, provides APIs for Python, Scala, and SQL, and integrates with Hadoop, Kafka, and cloud storage. This makes Spark faster than traditional MapReduce.
+
+# QUESTION
+# 4. explain difference between dataframes and datasets in spark
+In Apache Spark:
+
+DataFrame: A distributed collection of data organized into named columns, similar to a SQL table. It is optimized using Catalyst and Tungsten but operates on untyped data (runtime schema checking).
+
+Dataset: A strongly typed collection of data that provides compile-time type safety and is optimized using encoders. It is available in Scala and Java but not in Python.
+
+Key Difference:
+
+DataFrames use dynamic schema (untyped).
+
+Datasets provide compile-time type safety (typed).
+
+
 
 # QUESTION
 # 5. how does spark handles distributed computing
@@ -11,7 +38,6 @@ Directed Acyclic Graph (DAG) for optimized task execution.
 In-memory computation for faster processing.
 Lazy evaluation to optimize transformations before execution.
 Shuffle operations to redistribute data across nodes when needed.
-
 
 
 # QUESTION 6
