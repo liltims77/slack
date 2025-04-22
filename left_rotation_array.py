@@ -92,51 +92,51 @@ if __name__ == '__main__':
     fptr.close()
 
 
-Slicing in Python:
-arr[start:end]:
+# Slicing in Python:
+# arr[start:end]:
 
-start: The index where the slice begins (inclusive).
+# start: The index where the slice begins (inclusive).
 
-end: The index where the slice ends (exclusive).
+# end: The index where the slice ends (exclusive).
 
-The slice includes all elements from start up to, but not including, end.
+# The slice includes all elements from start up to, but not including, end.
 
-arr[start:]:
+# arr[start:]:
 
-If end is omitted, the slice goes from start to the end of the array.
+# If end is omitted, the slice goes from start to the end of the array.
 
-arr[:end]:
+# arr[:end]:
 
-If start is omitted, the slice goes from the beginning of the array up to, but not including, end.
+# If start is omitted, the slice goes from the beginning of the array up to, but not including, end.
 
-Examples:
-Let’s use the array arr = [10, 20, 30, 40, 50] to demonstrate slicing:
+# Examples:
+# Let’s use the array arr = [10, 20, 30, 40, 50] to demonstrate slicing:
 
-1. arr[3:]:
-This means "slice the array from index 3 to the end."
+# 1. arr[3:]:
+# This means "slice the array from index 3 to the end."
 
-Index 3 is inclusive, so it includes the element at index 3.
+# Index 3 is inclusive, so it includes the element at index 3.
 
-Result: [40, 50]
+# Result: [40, 50]
 
-2. arr[:3]:
-This means "slice the array from the start up to, but not including, index 3."
+# 2. arr[:3]:
+# This means "slice the array from the start up to, but not including, index 3."
 
-Index 3 is exclusive, so it stops at index 2.
+# Index 3 is exclusive, so it stops at index 2.
 
-Result: [10, 20, 30]
+# Result: [10, 20, 30]
 
-3. arr[1:4]:
-This means "slice the array from index 1 to index 4."
+# 3. arr[1:4]:
+# This means "slice the array from index 1 to index 4."
 
-Index 1 is inclusive, and index 4 is exclusive.
+# Index 1 is inclusive, and index 4 is exclusive.
 
-Result: [20, 30, 40]
+# Result: [20, 30, 40]
 
-4. arr[:]:
-This means "slice the entire array."
+# 4. arr[:]:
+# This means "slice the entire array."
 
-Result: [10, 20, 30, 40, 50]
+# Result: [10, 20, 30, 40, 50]
 
 
 
