@@ -21,7 +21,9 @@ def find_lowest_price_stores(fruit_stores):
 
         # Find the store with the minimum price
         lowest_store = min(stores, key=stores.get)
+        # why min(stores, key=stores.get)?  min() requires 2 arguments
         lowest_price_stores[item] = lowest_store
+         # Set the lowest store as the value in the new dictionary using the item as the key
     return lowest_price_stores
 
 print(find_lowest_price_stores(fruit_stores))
@@ -43,3 +45,9 @@ print(find_lowest_price_stores(fruit_stores))
 
 
 
+my_dict = {'name': 'Tim', 'age': 25}
+
+# Using .keys() and .values()
+for key in my_dict.keys():
+    value = my_dict[key]
+    print(key, value)
