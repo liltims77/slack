@@ -136,12 +136,12 @@ print(escaped_text)
 
 
 # Method	                                Description
-# re.findall(pattern, text)	            Returns a list of all matches
-# re.search(pattern, text)	            Returns the first match as a match object
+# re.findall(pattern, text)	                Returns a list of all matches
+# re.search(pattern, text)	                Returns the first match as a match object
 # re.split(pattern, text)	                Splits the string at matches
 # re.sub(pattern, replacement, text)	    Replaces matches with new text
 # re.subn(pattern, replacement, text)	    Same as sub(), but also returns the number of replacements
-# re.match(pattern, text)             	Checks if the string starts with the pattern
+# re.match(pattern, text)             	    Checks if the string starts with the pattern
 # re.compile(pattern)	                    Precompiles a regex for reuse (makes matching faster)
 # re.escape(text)	                        Escapes all regex special characters
 

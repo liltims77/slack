@@ -1,5 +1,6 @@
 # Problem Statement: Left Rotation on a Circular Array
-# A left rotation operation on a circular array shifts each of the array's elements 1 unit to the left. Elements that fall off the left end reappear at the right end. Given an integer d, rotate the array d steps to the left and return the result.
+# A left rotation operation on a circular array shifts each of the array's elements 1 unit to the left. 
+# Elements that fall off the left end reappear at the right end. Given an integer d, rotate the array d steps to the left and return the result.
 
 # Example:
 # Input: arr = [1, 2, 3, 4, 5], d = 2

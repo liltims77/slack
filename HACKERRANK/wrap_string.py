@@ -11,7 +11,8 @@
 # int max_width: the width to wrap to
 # Returns
 
-# string: a single string with newline characters ('\n') where the breaks should be
+# string: a single string with newline characters ('\n') 
+# where the breaks should be
 # Input Format
 
 # The first line contains a string, .

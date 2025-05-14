@@ -20,7 +20,7 @@
 
 ############################################################################
 
-SOLUTION
+# SOLUTION
 
 def iterate_numbers(X):
     previous_number = 0  # Initialize the previous number as 0
@@ -34,6 +34,8 @@ def iterate_numbers(X):
         
         # Update the previous number for the next iteration
         previous_number = current_number
+        # Update the previous_number to become the current_number.
+        # So, in the next loop, it uses the new previous number.
 
 # Example usage:
 X = 10  # Number of iterations

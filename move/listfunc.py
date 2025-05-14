@@ -7,7 +7,10 @@
 
 ##tuple
 
-#In Python, tuples are immutable, meaning their elements cannot be modified after creation. So if you want to modify the elements of a tuple, you need to convert it to a mutable data type, like a list, where you can change individual elements.
+#In Python, tuples are immutable, meaning their elements cannot 
+# be modified after creation. So if you want to modify the elements 
+# of a tuple, you need to convert it to a mutable data 
+# type, like a list, where you can change individual elements.
 
 def func(tpl):
     lst = list(tpl)  # Convert tuple to a list to modify it

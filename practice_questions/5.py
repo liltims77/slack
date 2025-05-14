@@ -5,8 +5,8 @@
 my_str = "WORLD"
 
 my_str = "WORLD"
-# result = '.' + '.'.join(my_str) + '.'
-result = '-'.join(my_str)
+result = '.' + '.'.join(my_str) + '.'
+# result = '-'.join(my_str)
 print(result)
 
 
