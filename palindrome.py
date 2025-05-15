@@ -70,9 +70,10 @@ import re
 text = "Hello123!"
 
 # Remove ONLY the first letter if it's an alphabet
-result = re.sub(r'^[a-zA-Z]', '', text) # extract the first letter (r'^[a-zA-Z]') if it is an alphabet and substitute it with nothing ie ('')
-# r'^[a-zA-Z]' -->> means first letter
-# r'[^a-zA-Z0-9]' -->> means the whole letter or string, or parameter or argument if it is an alphabet or number 0-9
+result = re.sub(r'^[a-zA-Z]', '', text) # extract the first letter (r'^[a-zA-Z]') if it is an alphabet and substitute it with nothing ie ('') --> ello123!
+# r'^[a-zA-Z]' -->> means first letter --> ello123!
+# r'[^a-zA-Z0-9]' -->> means the whole letter or string, or parameter or argument if it is an alphabet or number 0-9 -->> Hello
+
 
 
 print(result)
