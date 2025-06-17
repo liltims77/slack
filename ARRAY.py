@@ -188,7 +188,7 @@ def two_sum(nums, target):
        #  0, 1, 2, 3
 
     for i, num in enumerate(nums):
-        #eg 0 2, 
+         # 0 2, 
          # 1 7, 
          # 2 11, 
          # 3 15
