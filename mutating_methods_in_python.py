@@ -134,9 +134,16 @@
 # print(dir(str))      # all string methods
 # print(dir(list))     # all list methods
 # print(dir(dict))     # all dict methods
+# import array         # array
+# print(dir(array))
 
 # 2. ✅ Use built-in help system:
 # help(list.append)
 # help(str.replace)
 # help(dict.pop)
+
+
+import array
+print(dir(array))
+
 
