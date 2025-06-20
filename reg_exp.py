@@ -12,6 +12,21 @@ print(matches)
 # ✅ Output:
 ['hello@example.com', 'user123@gmail.com']
 
+# The part {2,} means:
+# Match at least 2 characters, with no upper limit.
+# {2,} applies to that range, meaning it should match at least 2 letters, 
+# and it can be more than 2 (like 3, 4, etc.).
+
+# Example Matches for That Section
+# This part is typically used for the top-level domain in an email address:
+
+# .com → matches com (3 letters ✅)
+
+# .uk → matches uk (2 letters ✅)
+
+# .xyz → matches xyz (3 letters ✅)
+
+# .a → ❌ does not match (only 1 letter)
 
 
 

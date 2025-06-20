@@ -48,3 +48,20 @@ for i in range(1,len(arr)+1, 2):
 1
 3
 5
+
+
+
+arr = [-4, -2, 1, 3, 5]
+for i in range(0, len(arr)+2, 2):
+    print(i)
+0
+2
+4
+6
+
+
+# len(arr) is 5.
+# This creates a range object, which generates numbers starting from 0, 
+# up to but not including len(arr) + 2 = 7, stepping by 2.
+
+# range(0, 7, 2) --->>>(start:stop:step)

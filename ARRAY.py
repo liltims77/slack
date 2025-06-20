@@ -125,7 +125,7 @@ print(get_product_of_two_numbers([1721, 979, 366, 299, 675, 1456], 2020))  # Out
 
 def sorted_square_array(arr):
     # Initialize an empty list to store the squares
-    squared_array = [0] * len(arr)
+    squared_array = [0] * len(arr)  # → [0, 0, 0, 0, 0]
 
     # Two pointers, one at the start and one at the end of the array
     left = 0
