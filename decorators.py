@@ -5,6 +5,8 @@ Essentially, a decorator is a higher-order function
 (a function that takes another function as an argument and returns a new function) 
 that wraps around the original function to add extra functionality"""
 
+# Decorators add functionalities to an existing code
+
 ## A decorator takes another function as an agrument, then defines an inner function
 #called a wrapper that executes codes before or after calling the original function
 

@@ -39,6 +39,11 @@ arr = [-4, -2, 1, 3, 5]
 # 0
 # 2
 # 4
+#  # len(arr) = 5 → len(arr) + 1 = 6
+# range(0, 6, 2) → produces: 0, 2, 4
+# Adding +1 means it goes one step beyond the last index.
+
+
 
 
 

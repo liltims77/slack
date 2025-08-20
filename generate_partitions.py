@@ -21,6 +21,6 @@ start_date = datetime.date(2024, 11, 1)
 end_date = datetime.date(2050, 12, 31)
 
 # Generate and save the partitions
-generate_daily_partitions(start_date, end_date, 'daily_partitions.txt')
+generate_daily_partitions(start_date, end_date, 'daily_partitions.txt')  
 
 print(f"Daily partitions from {start_date} to {end_date} have been saved to daily_partitions.txt")
