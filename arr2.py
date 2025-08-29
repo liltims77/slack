@@ -1,4 +1,5 @@
 arr = [-4, -2, 1, 3, 5]
+
 # for i in range(len(arr)-1, -1, -1):
 #     print(i)
 #     print(arr)
@@ -70,3 +71,11 @@ for i in range(0, len(arr)+2, 2):
 # up to but not including len(arr) + 2 = 7, stepping by 2.
 
 # range(0, 7, 2) --->>>(start:stop:step)
+
+
+
+# for i in range(len(arr)):
+# The defaults are:
+# start → 0
+# stop → len(arr) (the length of the sequence)
+# step → 1
