@@ -12,7 +12,7 @@ for i in range(len(nums)):
 # Reverse iteration
 for i in range(len(nums)-1, -1, -1):  
     ...
-################################################################################################################################
+
 # Two pointers (start + end)
 left, right = 0, len(nums)-1
 while left < right:
@@ -33,6 +33,22 @@ for right in range(len(nums)):
 #####################################################################################################################################
 # Strings
 
+# Reverse a string
+s[::-1]
+
+# Palindrome check
+s == s[::-1]
+
+# Frequency count
+from collections import Counter
+Counter(s)
+
+# Remove spaces/punctuation
+import re
+clean = re.sub(r'[^a-zA-Z0-9]', '', s).lower()
+
+################################################################################################################
+# 🔹 Linked List
 
 # Traverse
 node = head
@@ -112,6 +128,7 @@ for i in range(2, n+1):
     dp.append(dp[i-1] + dp[i-2])
 
 ##################################################################################################
+# 🔹 Sorting
 
 nums.sort()              # in-place
 sorted_nums = sorted(nums)  # new list
