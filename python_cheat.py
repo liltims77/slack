@@ -133,4 +133,10 @@ for i in range(2, n+1):
 nums.sort()              # in-place
 sorted_nums = sorted(nums)  # new list
 
+##########################################################################################################
 
+✅ Beginner tip:
+If it’s an array/list problem → think for or while with indexes, or sliding window.
+If it’s a linked list problem → think while node: or two pointers.
+If it’s a search problem → think binary search.
+If it’s a path/tree/graph problem → think DFS/BFS (recursion or queue).
